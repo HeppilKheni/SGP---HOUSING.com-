@@ -1,0 +1,43 @@
+*{
+    margin:0; padding: 0;
+    box-sizing: border-box;
+    font-family: '';   
+}
+nav{
+   width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar{
+    color: white;
+
+}
+.menu{
+    width: 40%;
+    display: flex;
+    justify-content:space-around;
+    padding-top: 20px;
+}
+
+.menu a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    padding: 0px 0px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo{
+   
+    color: white;
+    font-size: 22px;
+    padding-left: 30px ;
+    padding-top: 10px;
+    font-weight: bold;
+}
+a{
+    color: white;
+}
