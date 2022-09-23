@@ -1,7 +1,10 @@
 *{
     margin:0; padding: 0;
     box-sizing: border-box;
-    font-family: Calibri, Helvetica, sans-serif;  
+    font-family: Calibri, Helvetica, sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    /* scroll-padding-top: 7rem; */
 }
 header{
     position: fixed;
@@ -11,31 +14,33 @@ header{
     padding:  0.6%;
     box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
     font-weight: bold;
+    display: flex;
 }
 nav{
    width: 99%;
     position:fixed;
     display: flex;
     justify-content: space-between;
-    padding-right: 20px;
-    background-color: aliceblue;
+    padding-right: .10%;
+    background-color: rgb(164, 184, 203);
 }
 .navbar{
     color:black;
     height: 50px;
 }
+
+header .navbar.active{
+    clip-path: polygon(0 0,100% 100% ,0% 100%);
+}
 .menu{
     width: 50%;
     display: flex;
     justify-content:space-around;
-    padding-top: 14px;
-}
-.menu a{
-    text-decoration: none;
+    padding-top: 1.1%;
 }
 img{
     width: 100%;
-    padding: 0px 0px 0px;
+    padding: 0% 0% 0%;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -44,16 +49,19 @@ img{
     font-size: 22px;
     padding-left: 30px ;
     padding-top: 8px;
-    /* justify-content: center; */
-    font-weight: bold;
-    text-decoration: none;
+    justify-content: center;
+    font-weight: bolder;
 }
-a{
-    color: black ;
+.menu a{
+    color: rgb(84, 92, 100) ;
     font-size: 18px;
 }
+.navbar a:hover{
+    color:black;
+}
+
 footer{
-    box-sizing: 50px ;
+    box-sizing: 50px ; 
     box-shadow: 2cm;
 }
 main{
@@ -64,13 +72,112 @@ main{
     align-items: center;
     position:absolute;
 }
-section h1{
+.over h1{
     font-size: 40px;
     font-weight: 600;
     letter-spacing: 3px;
 }
-section h2{
+.over h2{
     font-size: 65px;
     font-weight: 600;
     letter-spacing: 3px;
 }
+
+.image_buyer{
+    width: 100%;
+    padding: 0% 0% 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* for home page */
+section{
+    padding: 2rem 9%;
+}
+.home{
+    min-height: 100vh;
+    background:url(home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding-top: 0%;
+}
+.home form{
+    margin-top:5.3rem;
+    background:#fff;
+    border-radius:.5rem;
+    box-shadow: 0.6rem .8rem rgba(0,0,0,.2);
+    border:.1rem solid rgba(0,0,0,.2);
+    width: 60rem;
+    padding: 2rem;
+}
+.home form h3{
+    text-align: center;
+    color: #333;
+    font-size: 3rem;
+}
+.btn{
+    width: 440px;
+    margin-top:1rem;
+    margin-bottom: 1rem;
+    display:inline-block;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+    font-size:1.4rem;
+    color:#333;
+    background: lightblue;
+    cursor: pointer;
+    display: inline-block;
+
+}
+.btn2{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+    font-size:1.4rem;
+    color:#333;
+    background: lightblue;
+    cursor: pointer;
+}
+.btn2:hover{
+    background: rgb(164, 184, 203) ;
+    color: #fff;
+}
+.btn:hover{
+    background: rgb(164, 184, 203) ;
+    color: #fff;
+}
+.submitbtn{
+    width: 900px;
+    justify-content: center;
+    display: flex;
+}
+
+.home form .buttons-container .btn{
+    flex: 1;
+    text-align:center;
+ }
+ 
+ .home form .inputbox{
+        display:flex;
+        flex-wrap: wrap;
+        gap:1.5rem;
+        margin-top: 2rem;
+ }
+.home form .inputbox input,
+.home form .inputbox select{
+    flex:1 1 25rem;
+    border: .1rem solid #333;
+    box-shadow: .2rem .5rem rgba(0,0,0,.1);
+    font-size:1.2rem;
+    padding:1rem;
+    text-transform: none;
+ }
+ .home form .btn2{
+    width:100%;
+    margin-top: 2rem;
+ }
+ 
