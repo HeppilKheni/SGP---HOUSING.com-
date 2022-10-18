@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <a href="idex.html" class="logo" style="opacity: 1;"><h1 class="motion">HOUSING.<span>com</span></h1></a>
+          <div class="menu">
+            <a href="For_buyers.html">For Buyers </a>
+            <a href="for_owner.html">For Owners </a>
+            <a href="properties.html">Properties</a>
+            <a href="login.html">Login / register</a>
+            <a href="#" id="menu-bars" class="fas fa-bars"></a>
+          </div>
+        </nav>
+      </header>
+        <div class="login_image">
+            <img src="images/img-5.jpg" style="opacity: 0.4; position: absolute;" >
+        </div>
+
+    <div class="main-form">
+        <form name="myForm" onsubmit="return validateForm()" aciton="Signup.php" method="post">
+            <h2 id="heading">Signup Now</h2>
+            <div class="input-main">
+
+                <div class="input">
+
+                    <label for="Full Name" class="label"><span>Full name </span> </label>
+                    <div class="input_class" id="input_name">
+                        <input type="name" name="fname" class="input-box" id="FullName" placeholder="firstname">
+                        <span class="formerror"></span>
+                    </div>
+                </div>
+
+                <div class="input">
+
+                    <label for="Email" class="label"><span> Email</span></label>
+                    <div class="input_class" id="input_email">
+                        <input type="email" class="input-box" id="Email" name="mail" placeholder="your email" required>
+                        <span class="formerror"></span>
+                    </div>
+                </div>
+                <!-- <input type="text" pattern="[789][0-9]{9}"> -->
+                <div class="input">
+
+                    <label for="phone_number" class="label"><span>Phone number</span></label>
+                    <div class="input_class" id="input_phone">
+                        <input type="tel" maxlength="10" pattern="[759][0-9]{9}" name="fphone" class="input-box" id="phone_number" placeholder="enter your phone number">
+                        <span class="formerror"></span>
+                    </div>
+                </div>
+               
+                <div class="input">
+
+                    <label for="Date" class="label"><span>Birth Date</span></label>
+                    <div class="input_class" id="input_dob">
+                        <input type="date" name="fdate" class="input-box" id="Date" placeholder="dob" max="2021-12-31">
+                        <span class="formerror"></span>
+                    </div>
+                </div>
+
+                <div class="input">
+
+                    <label for="Password" class="label"><span>Password </span> </label>
+                    <div class="input_class" id="input_pass">
+                        <input type="password" name="fpass" class="input-box" id="Password" placeholder="enter password"
+                            >
+                        <span class="formerror"></span>
+                    </div>
+
+                </div>
+
+                <div class="input">
+
+                    <label for="confirmpassword" class="label"><span> Confirm Password </span></label>
+                    <div class="input_class" id="input_cpass">
+                        <input type="password" name="fcpass" class="input-box" id="confirmpassword"
+                            placeholder="confirm password" >
+                        <span class="formerror"></span>
+                    </div>
+                </div>
+            </div>
+
+            <p class="term"><span><input type="checkbox" id="check" required></span> I agree to term services</p>
+
+            <!-- <div id="error" ><div class="formerror"></div></div> -->
+            <button type="submit" class="signup-btn">Sign Up</button>
+            <hr>
+            <p class="or">OR</p>
+            <!-- <button type="button" class="signup-btn">Sign up</button> -->
+            <p class="log_in-main">If you have an account ?<a href="login.html" class="log_in">Log In</a></p>
+        </form>
+    </div>
+</body>
+<!-- <script src="vk.js"></script> -->
+
+</html>
+
