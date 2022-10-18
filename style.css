@@ -16,6 +16,11 @@ header{
     font-weight: bold;
     display: flex;
 }
+
+/*--------------------------------------------------------------
+# Nav Bar
+--------------------------------------------------------------*/
+
 nav{
    width: 99%;
     position:fixed;
@@ -89,7 +94,13 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
 }
-/* for home page */
+
+
+/*--------------------------------------------------------------
+# home page
+--------------------------------------------------------------*/
+
+
 section{
     padding: 2rem 9%;
 }
@@ -107,7 +118,7 @@ section{
 .home form{
     margin-top:5.3rem;
     background:#fff;
-    border-radius:.5rem;
+    border-radius:1rem;
     box-shadow: 0.6rem .8rem rgba(0,0,0,.2);
     border:.1rem solid rgba(0,0,0,.2);
     width: 60rem;
@@ -181,7 +192,18 @@ section{
     margin-top: 2rem;
  }
  
- /* service part */
+
+
+/*--------------------------------------------------------------
+# Login page
+--------------------------------------------------------------*/
+
+
+
+
+/*--------------------------------------------------------------
+# service part
+--------------------------------------------------------------*/
  .img_ser{
     width: 250px;
  }
@@ -235,7 +257,12 @@ section{
         color: #fff;
 }
 
-/* feature part design */
+
+
+/*--------------------------------------------------------------
+#feature part design
+--------------------------------------------------------------*/
+
 .featured .box-container{
     display: flex;
     flex-wrap: wrap;
@@ -245,6 +272,7 @@ section{
 
 .featured .box-container .box{
     flex: 0 3 23rem;
+    margin-top: 40px;
     text-align: center;
     justify-content: space-between; 
     border:.1rem solid rgba(0,0,0,.2);
@@ -287,14 +315,12 @@ section{
     padding:.5rem 1.5rem;
     margin-left: 1rem;
 }
-
 .featured .box-container .box .image-container .icons{
     position: absolute;
     bottom:1rem; right:0;
     display: flex;
     justify-content: space-between;
-} 
-
+}
 .featured .box-container .box .image-container .icons a{
     font-size: 1.4rem;
     color:#fff;
@@ -308,6 +334,11 @@ section{
 .featured .box-container .box .image-container .icons a h3{
     font-weight: 500;
     padding-left: .5rem;
+    /* padding-top:  .1%; */
+}
+.featured .box-container .box .image-container .icons a:hover{
+    background: rgb(164, 184, 203) ;
+    color: #fff;
 }
 
 .featured .box-container .box .content{
@@ -348,12 +379,12 @@ section{
 }
 
 .featured .box-container .box .content .location h3{
-    font-size: 2.5rem;
+    font-size: 2rem;
     color:#333;
 }
 
 .featured .box-container .box .content .location p{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color:#666;
     line-height: 1.5;
     padding-top: .5rem;
@@ -368,8 +399,8 @@ section{
     flex:1;
     padding:1rem;
     border:.1rem solid rgba(0,0,0,.1);
-    color:#999;
-    font-size: 1.3rem;
+    color:black;
+    font-size: 1.1rem;
 }
 
 .featured .box-container .box .content .details h3 i{
@@ -382,7 +413,7 @@ section{
     gap:1rem;
 }
 
-.featured .box-container .box .content .buttons .btn{
+.featured .box-container .box .content .buttons .btn4{
     flex:1;
     font-size: 1.5rem;
 }
@@ -403,3 +434,391 @@ section{
         background: rgb(164, 184, 203) ;
         color: #fff;
 }
+
+
+/*--------------------------------------------------------------
+#  Team part 
+--------------------------------------------------------------*/
+
+.team .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    justify-content: center;
+}
+.team .box-container .box{
+    flex: 0 3 23rem;
+    background:#fff;
+    text-align: center;
+    border:.1rem solid rgba(0,0,0,.2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    padding:2rem;
+    position: relative;
+    width:26rem;
+}
+
+.team .box-container .box .fa-envelope{
+    position: absolute;
+    top:1.8rem; left:2rem;
+    color:#333;
+    font-size: 2rem;
+}
+
+.team .box-container .box .fa-envelope:hover{
+    color:  gray;
+}
+
+.team .box-container .box .fa-phone{
+    position: absolute;
+    top:1.8rem; right:2rem;
+    color:#333;
+    font-size: 2rem;
+}
+
+.team .box-container .box .fa-phone:hover{
+    color:  gray;
+}
+
+.team .box-container .box img{
+    border-radius: 50%;
+    box-shadow: 0 0 0 .5rem rgba(0,0,0,.1);
+    object-fit: cover;
+    height:10rem;
+    width:10rem;
+    margin:1rem 0;
+}
+
+.team .box-container .box h3{
+    font-size: 2rem;
+    color:#333;
+}
+
+.team .box-container .box span{
+    font-size: 1.6rem;
+    color:  gray;
+}
+
+.team .box-container .box .share{
+    padding-top: 2rem;
+    display: flex;
+}
+
+.team .box-container .box .share a{
+    margin:0 .3rem;
+    height:4rem;
+    width:4rem;
+    line-height: 4rem;
+    background:#f7f7f7;
+    color:#666;
+    border-radius: .5rem;
+    font-size: 2rem;
+}
+
+.team .box-container .box .share a:hover{
+    background: rgb(164, 184, 203) ;
+    color: #fff;
+}
+
+
+/*--------------------------------------------------------------
+# contact details 
+--------------------------------------------------------------*/
+.contact .icons-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    padding-bottom: 2rem;
+}
+
+.contact .icons-container .icons{
+    flex: 0 3 23rem;
+    background: #fff;
+    padding:2rem;
+    border:.1rem solid rgba(0,0,0,.2);
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    text-align: center;
+}
+
+.contact .icons-container .icons img{
+    height:9rem;
+    width: 300px;
+}
+
+.contact .icons-container .icons h3{
+    font-size: 2.5rem;
+    color:#333;
+    padding:1rem 0;
+}
+
+.contact .icons-container .icons p{
+    font-size: 1.5rem;
+    color:#666;
+    padding:.2rem 0;
+}
+
+
+/*--------------------------------------------------------------
+# Map details 
+--------------------------------------------------------------*/
+
+.map .row{
+    background: #fff;
+    border:.1rem solid rgba(0,0,0,.2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    padding:1rem;
+}
+
+.map .row form{
+    flex:1 2 30rem;
+    padding:.5rem 1rem;
+}
+
+.map .row .map{
+    flex:1 2 30rem;
+    width:100%;
+    padding:1rem;
+}
+
+.map .row form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.map .row form textarea,
+.map .row form .inputBox input{
+    margin-top: 1rem;
+    padding:1rem;
+    font-size: 1.7rem;
+    color:#333;
+    background: #f7f7f7;
+    border-radius: .5rem;
+    text-transform: none;
+    width:49%;
+}
+
+.map .row form textarea{
+    width:100%;
+    height:15rem;
+    resize: none;
+}
+
+.map .row form textarea:focus,
+.map .row form .inputBox input:focus{
+    background-color: #f7f7f7;
+}
+
+/*--------------------------------------------------------------
+# footer section 
+--------------------------------------------------------------*/
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+.container{
+	max-width: 1200px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+    color: #bbbbbb;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4:hover{
+	color: #ffffff;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 8px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 1s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/* for buyer  -> Buyer data */
+.buyer_data .buyerall{
+    display: flex;
+}
+.buyer_data .buyerall .buye1{
+    width: 4500px;
+    margin-right:30px;
+}
+
+.buyer_data .buyerall{
+    display: flex;
+}
+.buyer_data .buyerall .buye2{
+    width: 4500px;
+    margin-left:30px ;
+}
+
+
+.buyer_data .buyerall3{
+    /* display: block; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buyer_data .buyerall3 .buye3{
+    width: 5000px;
+    margin-right:30px;
+    margin-top:10% ;
+}
+
+.buyer_data .buyerall3 .databuye3{
+    margin-top:10%;
+} 
+
+.btn_buy{
+    width: 220px;
+    margin-top:1rem;
+    margin-bottom: 1rem;
+    display:inline-block;
+    padding: .5rem 3rem;
+    border-radius: .5rem;
+    text-align: center;
+    justify-content: center;
+    font-size:1.4rem;
+    color:#333;
+    background: lightblue;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 42%;
+}
+.btn_buy:hover{
+        background: rgb(164, 184, 203) ;
+        color: #fff;
+}
+
+/* media queries  */
+@media (max-width:991px){
+
+    html{
+        font-size:55%;
+    }
+
+    header{
+        padding:1.5rem 1rem;
+    }
+
+    section{
+        padding:1.5rem;
+    }
+
+}
+
+/* media Query */
+@media (max-width:768px){
+
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+
+    header .navbar{
+        position: absolute;
+        left:0; right:0; top:100%;
+        background:#f7f7f7;
+        border-top: .1rem solid #333;
+        border-bottom: .1rem solid #333;
+        transition: .2s linear;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a{
+        display: block;
+        padding:1.5rem;
+        margin:1.5rem;
+        background:#fff;
+        border:.1rem solid #333;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+        border-radius: .5rem;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size:50%;
+    }
+
+    .map .row form .inputBox input{
+        width: 100%;
+    }
+
+}
+/*responsive*/
+@media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }
